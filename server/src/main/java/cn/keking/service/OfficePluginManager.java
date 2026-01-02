@@ -54,7 +54,7 @@ public class OfficePluginManager {
      */
     @PostConstruct
     public void startOfficeManager() throws OfficeException {
-        File officeHome = LocalOfficeUtils.getDefaultOfficeHome();
+        /*File officeHome = LocalOfficeUtils.getDefaultOfficeHome();
         if (officeHome == null) {
             throw new RuntimeException("找不到office组件，请确认'office.home'配置是否有误");
         }
@@ -79,7 +79,7 @@ public class OfficePluginManager {
         } catch (Exception e) {
             logger.error("启动office组件失败，请检查office组件是否可用");
             throw e;
-        }
+        }*/
     }
 
     private boolean killProcess() {
